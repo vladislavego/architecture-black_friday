@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="0">
+    <mxGraphModel dx="1160" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: configSrv" vertex="1">
+          <mxGeometry height="110" width="600" x="220" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: shard1" vertex="1">
+          <mxGeometry height="240" width="260" x="50" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: shard2" vertex="1">
+          <mxGeometry height="240" width="260" x="730" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" value="pymongo-api" vertex="1">
+          <mxGeometry height="60" width="180" x="430" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;" value="mongos" vertex="1">
+          <mxGeometry height="60" width="180" x="430" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-1" vertex="1">
+          <mxGeometry height="50" width="160" x="250" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-2" vertex="1">
+          <mxGeometry height="50" width="160" x="440" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-3" vertex="1">
+          <mxGeometry height="50" width="160" x="630" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-1 (P)" vertex="1">
+          <mxGeometry height="50" width="200" x="80" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-2 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="80" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-3 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="80" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard2-1 (P)" vertex="1">
+          <mxGeometry height="50" width="200" x="760" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard2-2 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="760" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard3-3 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="760" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-35" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-36" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="430" />
+              <mxPoint x="330" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-37" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="440" />
+              <mxPoint x="520" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-38" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="430" />
+              <mxPoint x="710" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-39" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-40" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-42" edge="1" parent="1" source="LphC-qCq_CCpZkPDIoOk-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="LphC-qCq_CCpZkPDIoOk-41" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="130" as="sourcePoint" />
+            <mxPoint x="520" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LphC-qCq_CCpZkPDIoOk-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Redis" vertex="1">
+          <mxGeometry height="60" width="180" x="430" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
