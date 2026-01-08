@@ -38,8 +38,20 @@ Redis используется для кеширования данных на �
 
 ---
 
----
+## Быстрый старт
 
-## Как запустить проект
+Для запуска финальной версии проекта необходимо перейти в директорию
+`sharding-repl-cache`
 
-Подробная инструкция по запуску проекта приведена в [readme директории sharding-repl-cache](sharding-repl-cache/README.md).
+```shell
+    cd sharding-repl-cache
+```
+
+и выполнить команды
+```shell
+    docker compose up -d
+    ./scripts/mongo-init.sh
+```
+
+Более подробная инструкция по запуску, проверке MongoDB, репликации и
+кеширования описана в файле README.md внутри директории `sharding-repl-cache`.
