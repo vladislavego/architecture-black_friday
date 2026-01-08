@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="0">
+    <mxGraphModel dx="1234" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" value="pymongo-api" vertex="1">
+          <mxGeometry height="60" width="180" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mongos" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;" value="mongos" vertex="1">
+          <mxGeometry height="60" width="180" x="360" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="config" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv" vertex="1">
+          <mxGeometry height="60" width="180" x="360" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sh1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1" vertex="1">
+          <mxGeometry height="60" width="180" x="170" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="sh2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard2" vertex="1">
+          <mxGeometry height="60" width="180" x="540" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="mongos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="config">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="164" />
+              <mxPoint x="260" y="354" />
+            </Array>
+            <mxPoint x="360" y="164" as="sourcePoint" />
+            <mxPoint x="260" y="354" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="sh2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

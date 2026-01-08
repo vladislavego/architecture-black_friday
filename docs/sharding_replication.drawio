@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="0">
+    <mxGraphModel dx="1234" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g_config" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: configSrv" vertex="1">
+          <mxGeometry height="110" width="600" x="240" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="g_sh1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: shard1" vertex="1">
+          <mxGeometry height="240" width="260" x="70" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="g_sh2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=3 3;fillColor=none;strokeColor=#666666;fontStyle=1;" value="Replica Set: shard2" vertex="1">
+          <mxGeometry height="240" width="260" x="750" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" value="pymongo-api" vertex="1">
+          <mxGeometry height="60" width="180" x="450" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mongos" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;" value="mongos" vertex="1">
+          <mxGeometry height="60" width="180" x="450" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-1" vertex="1">
+          <mxGeometry height="50" width="160" x="270" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-2" vertex="1">
+          <mxGeometry height="50" width="160" x="460" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="configSrv-3" vertex="1">
+          <mxGeometry height="50" width="160" x="650" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-1 (P)" vertex="1">
+          <mxGeometry height="50" width="200" x="100" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="s12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-2 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="s13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard1-3 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="100" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard2-1 (P)" vertex="1">
+          <mxGeometry height="50" width="200" x="780" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="s22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard2-2 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="780" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="s23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;" value="MongoDB&lt;br&gt;shard3-3 (S)" vertex="1">
+          <mxGeometry height="50" width="200" x="780" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="mongos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="c1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="230" />
+              <mxPoint x="350" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="c2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="240" />
+              <mxPoint x="540" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="230" />
+              <mxPoint x="730" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="s11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=block;html=1;" target="s21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
